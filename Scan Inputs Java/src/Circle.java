@@ -5,7 +5,7 @@ public class Circle extends Shape{
 	public Circle (int rad, String ShapeName)
 	{
 		super(ShapeName);
-		this.radius=rad;
+		radius=rad;
 	}
 	
 	public double area ()
