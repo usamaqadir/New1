@@ -1,0 +1,61 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		usamalist Mylist = new usamalist();
+		Mylist.add(3);
+		Mylist.add(5);
+		Mylist.add(6);
+		Mylist.add(7);
+		Mylist.showall();
+
+	}
+
+}
+
+
+
+public class usamalist {
+	public linkNode list;
+	public void add(int val)
+	{
+		linkNode temp;
+		if( list==null)
+		{
+			list=new linkNode();
+			list.value=val;
+		}
+		else{
+			temp=list;
+			list=new linkNode();
+			list.value=val;
+			temp.add=list;
+			list=temp;
+		}}
+		public void showall()
+		{
+			linkNode temp;
+			temp=list;
+			while(temp.add != null)
+			{
+				System.out.println(temp.value);
+				temp=temp.add;
+				
+			}
+			System.out.println(temp.value);
+			}
+			
+		}
+	
+
+
+
+public class linkNode {
+	int value;
+	linkNode add;
+	
+
+}
+
+
